@@ -64,9 +64,7 @@ actor Counter {
 
     public shared query func http_request() : async HttpResponse {
         {
-            body = Text.encodeUtf8(
-                "<html>The current counter value is : "# Nat.toText(currentValue) # "</html>"
-            );
+            body = Text.encodeUtf8("<html><body>The current counter value is : " # Nat.toText(currentValue) # "</body></html>");
             headers = [];
             streaming_stragegy = null;
             status_code = 200;
