@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import List "mo:base/List";
 import Iter "mo:base/Iter";
 import Time "mo:base/Time";
@@ -63,6 +64,8 @@ actor {
 }
 
 /*
+=======
+>>>>>>> f4029dd009c0186aba50fb8cac8672e1bc6a2087
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 
@@ -136,7 +139,11 @@ actor Counter {
         }
     };
 }
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> f4029dd009c0186aba50fb8cac8672e1bc6a2087
 /*
 import Array "mo:base/Array";
 actor Counter {
@@ -160,4 +167,8 @@ actor Counter {
         Array.freeze(quicksort(Array.thaw(arr))); 
     };
 }
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> f4029dd009c0186aba50fb8cac8672e1bc6a2087
