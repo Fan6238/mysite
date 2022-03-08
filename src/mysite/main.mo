@@ -15,7 +15,8 @@ actor {
         timeline : shared () -> async [Message];
     };
     var followed : List.List<Principal> = List.nil();
-    public shared func follow(id : Principal) : async () {
+    public shared (msgCall) func follow(id : Principal) : async () {
+        assert(Principal.toText(msgCall.caller) == "b5k7c-lyygt-7pbfs-7d5ym-w2qhb-z6epe-ifszn-sd424-ivm4t-3mcwk-rqe");
         let exist = List.some<Principal>(
             followed, 
             func(id){id==id;}
